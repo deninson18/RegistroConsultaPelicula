@@ -5,9 +5,7 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistroConsultaPelicula", "RegistroConsultaPelicula\RegistroConsultaPelicula.csproj", "{C32C350F-7E2B-4E88-8381-E1C28AEE6863}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{6C83A8B4-5774-42E8-A03A-775D748CEA0A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLL", "DLL\DLL.csproj", "{0F02517E-D152-495A-85E8-6AFBC4AB9AD1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DLL", "DAL\DLL.csproj", "{6C83A8B4-5774-42E8-A03A-775D748CEA0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{6C83A8B4-5774-42E8-A03A-775D748CEA0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C83A8B4-5774-42E8-A03A-775D748CEA0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C83A8B4-5774-42E8-A03A-775D748CEA0A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0F02517E-D152-495A-85E8-6AFBC4AB9AD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F02517E-D152-495A-85E8-6AFBC4AB9AD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0F02517E-D152-495A-85E8-6AFBC4AB9AD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F02517E-D152-495A-85E8-6AFBC4AB9AD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
