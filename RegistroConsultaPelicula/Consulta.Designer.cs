@@ -29,23 +29,65 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.consultarButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(45, 80);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(721, 180);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // button3
+            // 
+            this.button3.Image = global::RegistroConsultaPelicula.Properties.Resources.cancel;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.Location = new System.Drawing.Point(582, 198);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(132, 54);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Cancelar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Image = global::RegistroConsultaPelicula.Properties.Resources._1443952939_edit_clear;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(291, 198);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(126, 54);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Limpiar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // consultarButton
+            // 
+            this.consultarButton.Image = global::RegistroConsultaPelicula.Properties.Resources._1443952390_client;
+            this.consultarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.consultarButton.Location = new System.Drawing.Point(12, 198);
+            this.consultarButton.Name = "consultarButton";
+            this.consultarButton.Size = new System.Drawing.Size(127, 54);
+            this.consultarButton.TabIndex = 1;
+            this.consultarButton.Text = "Consultar";
+            this.consultarButton.UseVisualStyleBackColor = true;
+            this.consultarButton.Click += new System.EventHandler(this.consultarButton_Click);
             // 
             // Consulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 261);
+            this.BackColor = System.Drawing.Color.YellowGreen;
+            this.ClientSize = new System.Drawing.Size(745, 264);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.consultarButton);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Consulta";
             this.Text = "Consulta";
@@ -57,5 +99,8 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button consultarButton;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

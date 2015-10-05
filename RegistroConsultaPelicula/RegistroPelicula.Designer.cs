@@ -28,78 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroPelicula));
+            this.CalificaciontextBox = new System.Windows.Forms.TextBox();
+            this.ImdbtextBox = new System.Windows.Forms.TextBox();
+            this.CategoriatextBox = new System.Windows.Forms.TextBox();
+            this.DescripciontextBox = new System.Windows.Forms.TextBox();
+            this.TitulotextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.AnotextBox = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox6
+            // CalificaciontextBox
             // 
-            this.textBox6.Location = new System.Drawing.Point(98, 125);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(347, 22);
-            this.textBox6.TabIndex = 23;
+            this.CalificaciontextBox.Location = new System.Drawing.Point(453, 49);
+            this.CalificaciontextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CalificaciontextBox.Name = "CalificaciontextBox";
+            this.CalificaciontextBox.Size = new System.Drawing.Size(303, 22);
+            this.CalificaciontextBox.TabIndex = 23;
             // 
-            // textBox5
+            // ImdbtextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(98, 89);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(347, 22);
-            this.textBox5.TabIndex = 22;
+            this.ImdbtextBox.Location = new System.Drawing.Point(52, 49);
+            this.ImdbtextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ImdbtextBox.Name = "ImdbtextBox";
+            this.ImdbtextBox.Size = new System.Drawing.Size(288, 22);
+            this.ImdbtextBox.TabIndex = 22;
+            this.ImdbtextBox.TextChanged += new System.EventHandler(this.ImdbtextBox_TextChanged);
             // 
-            // textBox4
+            // CategoriatextBox
             // 
-            this.textBox4.Location = new System.Drawing.Point(98, 55);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(347, 22);
-            this.textBox4.TabIndex = 21;
+            this.CategoriatextBox.Location = new System.Drawing.Point(453, 13);
+            this.CategoriatextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CategoriatextBox.Name = "CategoriatextBox";
+            this.CategoriatextBox.Size = new System.Drawing.Size(303, 22);
+            this.CategoriatextBox.TabIndex = 21;
             // 
-            // textBox3
+            // DescripciontextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(453, 115);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(313, 92);
-            this.textBox3.TabIndex = 20;
+            this.DescripciontextBox.Location = new System.Drawing.Point(453, 91);
+            this.DescripciontextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.DescripciontextBox.Multiline = true;
+            this.DescripciontextBox.Name = "DescripciontextBox";
+            this.DescripciontextBox.Size = new System.Drawing.Size(303, 96);
+            this.DescripciontextBox.TabIndex = 20;
             // 
-            // textBox2
+            // TitulotextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(98, 20);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(347, 22);
-            this.textBox2.TabIndex = 19;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(494, 17);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 22);
-            this.textBox1.TabIndex = 18;
+            this.TitulotextBox.Location = new System.Drawing.Point(52, 14);
+            this.TitulotextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.TitulotextBox.Name = "TitulotextBox";
+            this.TitulotextBox.Size = new System.Drawing.Size(288, 22);
+            this.TitulotextBox.TabIndex = 18;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 58);
+            this.label6.Location = new System.Drawing.Point(357, 17);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(88, 16);
@@ -110,7 +105,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(13, 89);
+            this.label5.Location = new System.Drawing.Point(12, 49);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 16);
@@ -121,7 +116,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 125);
+            this.label4.Location = new System.Drawing.Point(357, 49);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 16);
@@ -133,7 +128,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(456, 95);
+            this.label3.Location = new System.Drawing.Point(357, 91);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 16);
@@ -144,83 +139,101 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(456, 20);
+            this.label2.Location = new System.Drawing.Point(12, 17);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 16);
             this.label2.TabIndex = 13;
             this.label2.Text = "Titulo";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 16);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Pelicula ID";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(182, 184);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(370, 184);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(456, 58);
+            this.label7.Location = new System.Drawing.Point(12, 88);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(32, 16);
             this.label7.TabIndex = 26;
             this.label7.Text = "Ano";
             // 
-            // textBox7
+            // AnotextBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(494, 55);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(272, 22);
-            this.textBox7.TabIndex = 27;
+            this.AnotextBox.Location = new System.Drawing.Point(52, 85);
+            this.AnotextBox.Name = "AnotextBox";
+            this.AnotextBox.Size = new System.Drawing.Size(288, 22);
+            this.AnotextBox.TabIndex = 27;
+            // 
+            // button3
+            // 
+            this.button3.Image = global::RegistroConsultaPelicula.Properties.Resources.cancel;
+            this.button3.Location = new System.Drawing.Point(265, 113);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 74);
+            this.button3.TabIndex = 29;
+            this.button3.Text = "Cancelar";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Image = global::RegistroConsultaPelicula.Properties.Resources.moviereg;
+            this.pictureBox1.Location = new System.Drawing.Point(52, 194);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(704, 115);
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.Image = global::RegistroConsultaPelicula.Properties.Resources._1443952939_edit_clear;
+            this.button2.Location = new System.Drawing.Point(157, 113);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 74);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "Limpiar";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Image = global::RegistroConsultaPelicula.Properties.Resources._1443952702_document_save_as;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.Location = new System.Drawing.Point(52, 113);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 74);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Guardar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // RegistroPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(779, 224);
-            this.Controls.Add(this.textBox7);
+            this.BackColor = System.Drawing.Color.YellowGreen;
+            this.ClientSize = new System.Drawing.Size(769, 339);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.AnotextBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.CalificaciontextBox);
+            this.Controls.Add(this.ImdbtextBox);
+            this.Controls.Add(this.CategoriatextBox);
+            this.Controls.Add(this.DescripciontextBox);
+            this.Controls.Add(this.TitulotextBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RegistroPelicula";
             this.Text = "RegistroPelicula";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,21 +241,21 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox CalificaciontextBox;
+        private System.Windows.Forms.TextBox ImdbtextBox;
+        private System.Windows.Forms.TextBox CategoriatextBox;
+        private System.Windows.Forms.TextBox DescripciontextBox;
+        private System.Windows.Forms.TextBox TitulotextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox AnotextBox;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button3;
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using DAL;
 namespace BLL
 {
     public class Peliculas
@@ -38,5 +38,17 @@ namespace BLL
             this.CategoriaId = fCategoriaID;
 
         }
+        public bool Insertar()
+        {
+            bool retorno = false;
+
+            Conectar co = new Conectar();
+
+            co.Ejecutar(string.Format("Insert Into Pelicula (Titulo,Descripcion,Ano,Calificacion,Imdb,CategoriaId) Values('{0}','{1}',{2},{3},{4},{5})", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.Imbd, this.CategoriaId));
+
+            return retorno;
+
+        }
+
     }
 }

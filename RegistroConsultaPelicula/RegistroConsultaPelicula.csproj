@@ -77,6 +77,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Formulario.resx">
       <DependentUpon>Formulario.cs</DependentUpon>
@@ -96,6 +97,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{116de865-8dc2-45af-ab24-9b625712c64c}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443952702_document-save-as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443952939_edit-clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moviereg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1443952390_client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formulario.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
