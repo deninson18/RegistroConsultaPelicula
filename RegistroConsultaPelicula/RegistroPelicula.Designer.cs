@@ -41,10 +41,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.AnotextBox = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.rEliminarbutton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.rLimpiarbutton = new System.Windows.Forms.Button();
+            this.rGuardarbutton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,16 +162,16 @@
             this.AnotextBox.Size = new System.Drawing.Size(288, 22);
             this.AnotextBox.TabIndex = 27;
             // 
-            // button3
+            // rEliminarbutton
             // 
-            this.button3.Image = global::RegistroConsultaPelicula.Properties.Resources.cancel;
-            this.button3.Location = new System.Drawing.Point(265, 113);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 74);
-            this.button3.TabIndex = 29;
-            this.button3.Text = "Cancelar";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.UseVisualStyleBackColor = true;
+            this.rEliminarbutton.Image = global::RegistroConsultaPelicula.Properties.Resources.cancel;
+            this.rEliminarbutton.Location = new System.Drawing.Point(265, 113);
+            this.rEliminarbutton.Name = "rEliminarbutton";
+            this.rEliminarbutton.Size = new System.Drawing.Size(75, 74);
+            this.rEliminarbutton.TabIndex = 29;
+            this.rEliminarbutton.Text = "Eliminar";
+            this.rEliminarbutton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rEliminarbutton.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -183,29 +183,30 @@
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
-            // button2
+            // rLimpiarbutton
             // 
-            this.button2.Image = global::RegistroConsultaPelicula.Properties.Resources._1443952939_edit_clear;
-            this.button2.Location = new System.Drawing.Point(157, 113);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 74);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Limpiar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.UseVisualStyleBackColor = true;
+            this.rLimpiarbutton.Image = global::RegistroConsultaPelicula.Properties.Resources._1443952939_edit_clear;
+            this.rLimpiarbutton.Location = new System.Drawing.Point(157, 113);
+            this.rLimpiarbutton.Name = "rLimpiarbutton";
+            this.rLimpiarbutton.Size = new System.Drawing.Size(75, 74);
+            this.rLimpiarbutton.TabIndex = 25;
+            this.rLimpiarbutton.Text = "Limpiar";
+            this.rLimpiarbutton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rLimpiarbutton.UseVisualStyleBackColor = true;
+            this.rLimpiarbutton.Click += new System.EventHandler(this.rLimpiarbutton_Click);
             // 
-            // button1
+            // rGuardarbutton
             // 
-            this.button1.Image = global::RegistroConsultaPelicula.Properties.Resources._1443952702_document_save_as;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(52, 113);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 74);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Guardar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.rGuardarbutton.Image = global::RegistroConsultaPelicula.Properties.Resources._1443952702_document_save_as;
+            this.rGuardarbutton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rGuardarbutton.Location = new System.Drawing.Point(52, 113);
+            this.rGuardarbutton.Name = "rGuardarbutton";
+            this.rGuardarbutton.Size = new System.Drawing.Size(75, 74);
+            this.rGuardarbutton.TabIndex = 24;
+            this.rGuardarbutton.Text = "Guardar";
+            this.rGuardarbutton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rGuardarbutton.UseVisualStyleBackColor = true;
+            this.rGuardarbutton.Click += new System.EventHandler(this.button1_Click);
             // 
             // RegistroPelicula
             // 
@@ -213,12 +214,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.YellowGreen;
             this.ClientSize = new System.Drawing.Size(769, 339);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.rEliminarbutton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.AnotextBox);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.rLimpiarbutton);
+            this.Controls.Add(this.rGuardarbutton);
             this.Controls.Add(this.CalificaciontextBox);
             this.Controls.Add(this.ImdbtextBox);
             this.Controls.Add(this.CategoriatextBox);
@@ -251,11 +252,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button rGuardarbutton;
+        private System.Windows.Forms.Button rLimpiarbutton;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox AnotextBox;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button rEliminarbutton;
     }
 }

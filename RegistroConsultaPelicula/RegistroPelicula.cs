@@ -41,5 +41,15 @@ namespace RegistroConsultaPelicula
         {
 
         }
+
+        private void rLimpiarbutton_Click(object sender, EventArgs e)
+        {
+            TitulotextBox.Clear();
+            ImdbtextBox.Clear();
+            AnotextBox.Clear();
+            CategoriatextBox.Clear();
+            CalificaciontextBox.Clear();
+            DescripciontextBox.Clear();
+        }
     }
 }
