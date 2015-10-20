@@ -25,8 +25,41 @@ namespace RegistroConsultaPelicula
 
         private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            RegistroGenero registro = new RegistroGenero();
+            registro.Show();
+        }
+
+        private void peliculasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void consultasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void generosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void peliculasToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
             Consulta c = new Consulta();
             c.Show();
+        }
+
+        private void registroDeActoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroActores registro = new RegistroActores();
+            registro.Show();
+        }
+
+        private void registroDeEstudiosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroEstudio registro = new RegistroEstudio();
+            registro.Show();
         }
     }
 }

@@ -26,7 +26,7 @@ namespace RegistroConsultaPelicula
 
         private void consultarButton_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=.\\SQLEXPRESS;Initial Catalog=Rpelicula;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=\\SQLEXPRESS;Initial Catalog=Rpelicula;Integrated Security=True");
            SqlCommand Cmd = new SqlCommand();
 
             SqlDataAdapter adapter;

@@ -32,6 +32,10 @@
             this.archivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroDeActoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroDeEstudiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.peliculasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -39,7 +43,8 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.GreenYellow;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.archivosToolStripMenuItem});
+            this.archivosToolStripMenuItem,
+            this.consultasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(284, 24);
@@ -50,7 +55,9 @@
             // 
             this.archivosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registroToolStripMenuItem,
-            this.consultaToolStripMenuItem});
+            this.consultaToolStripMenuItem,
+            this.registroDeActoresToolStripMenuItem,
+            this.registroDeEstudiosToolStripMenuItem});
             this.archivosToolStripMenuItem.Name = "archivosToolStripMenuItem";
             this.archivosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.archivosToolStripMenuItem.Text = "Archivos";
@@ -58,16 +65,45 @@
             // registroToolStripMenuItem
             // 
             this.registroToolStripMenuItem.Name = "registroToolStripMenuItem";
-            this.registroToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
-            this.registroToolStripMenuItem.Text = "Registro";
+            this.registroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registroToolStripMenuItem.Text = "Registro Peliculas";
             this.registroToolStripMenuItem.Click += new System.EventHandler(this.registroToolStripMenuItem_Click);
             // 
             // consultaToolStripMenuItem
             // 
             this.consultaToolStripMenuItem.Name = "consultaToolStripMenuItem";
-            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
-            this.consultaToolStripMenuItem.Text = "Consulta";
+            this.consultaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultaToolStripMenuItem.Text = "Registro de Generos";
             this.consultaToolStripMenuItem.Click += new System.EventHandler(this.consultaToolStripMenuItem_Click);
+            // 
+            // registroDeActoresToolStripMenuItem
+            // 
+            this.registroDeActoresToolStripMenuItem.Name = "registroDeActoresToolStripMenuItem";
+            this.registroDeActoresToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registroDeActoresToolStripMenuItem.Text = "Registro de Actores";
+            this.registroDeActoresToolStripMenuItem.Click += new System.EventHandler(this.registroDeActoresToolStripMenuItem_Click);
+            // 
+            // registroDeEstudiosToolStripMenuItem
+            // 
+            this.registroDeEstudiosToolStripMenuItem.Name = "registroDeEstudiosToolStripMenuItem";
+            this.registroDeEstudiosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registroDeEstudiosToolStripMenuItem.Text = "Registro de Estudios";
+            this.registroDeEstudiosToolStripMenuItem.Click += new System.EventHandler(this.registroDeEstudiosToolStripMenuItem_Click);
+            // 
+            // consultasToolStripMenuItem
+            // 
+            this.consultasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.peliculasToolStripMenuItem});
+            this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.consultasToolStripMenuItem.Text = "Consultas";
+            // 
+            // peliculasToolStripMenuItem
+            // 
+            this.peliculasToolStripMenuItem.Name = "peliculasToolStripMenuItem";
+            this.peliculasToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.peliculasToolStripMenuItem.Text = "Peliculas";
+            this.peliculasToolStripMenuItem.Click += new System.EventHandler(this.peliculasToolStripMenuItem_Click_1);
             // 
             // Formulario
             // 
@@ -92,6 +128,10 @@
         private System.Windows.Forms.ToolStripMenuItem archivosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem peliculasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroDeActoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registroDeEstudiosToolStripMenuItem;
     }
 }
 

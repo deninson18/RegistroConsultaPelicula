@@ -40,7 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actores.cs" />
     <Compile Include="ClaseMaestra.cs" />
+    <Compile Include="Estudio.cs" />
+    <Compile Include="Genero.cs" />
     <Compile Include="Peliculas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

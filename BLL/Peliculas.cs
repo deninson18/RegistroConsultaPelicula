@@ -42,9 +42,9 @@ namespace BLL
         {
             bool retorno = false;
 
-            Conectar co = new Conectar();
+            Conectar conector = new Conectar();
 
-            co.Ejecutar(string.Format("Insert Into Pelicula (Titulo,Descripcion,Ano,Calificacion,Imdb,CategoriaId) Values('{0}','{1}',{2},{3},{4},{5})", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.Imbd, this.CategoriaId));
+            conector.Ejecutar(string.Format("Insert Into Pelicula (Titulo,Descripcion,Ano,Calificacion,Imdb,CategoriaId) Values('{0}','{1}',{2},{3},{4},{5})", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.Imbd, this.CategoriaId));
 
             return retorno;
 
