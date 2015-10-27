@@ -20,11 +20,11 @@ namespace RegistroConsultaPelicula
 
         private void GuardarEstudio_Click(object sender, EventArgs e)
         {
-            Estudio cine = new Estudio();
+            Estudios cine = new Estudios();
             if(estudioIdtextBox.Text.Length == 0)
             {
 
-                cine.nombreEstudio = nombreEstudiotextBox.Text;
+                cine.NombreEstudio = nombreEstudiotextBox.Text;
                 if (cine.Insertar())
                 {
                     MessageBox.Show("Estudio no se agrego");
@@ -39,8 +39,8 @@ namespace RegistroConsultaPelicula
             {
 
 
-                cine.estudioId = Convert.ToInt32(estudioIdtextBox.Text);
-                cine.nombreEstudio = nombreEstudiotextBox.Text;
+                cine.EstudioId = Convert.ToInt32(estudioIdtextBox.Text);
+                cine.NombreEstudio = nombreEstudiotextBox.Text;
                 if (cine.Editar())
                 {
                     MessageBox.Show("Estudio no editado");
@@ -57,8 +57,8 @@ namespace RegistroConsultaPelicula
         {
              if (estudioIdtextBox.Text.Length > 0)
             {
-                Estudio cine = new Estudio();
-                cine.estudioId = Convert.ToInt32(estudioIdtextBox.Text);
+                Estudios cine = new Estudios();
+                cine.EstudioId = Convert.ToInt32(estudioIdtextBox.Text);
                 cine.Eliminar();
                 MessageBox.Show("estudio ha sido eliminado");
 

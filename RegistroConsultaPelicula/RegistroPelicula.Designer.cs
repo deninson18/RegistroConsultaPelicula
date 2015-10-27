@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroPelicula));
             this.CalificaciontextBox = new System.Windows.Forms.TextBox();
             this.ImdbtextBox = new System.Windows.Forms.TextBox();
             this.CategoriatextBox = new System.Windows.Forms.TextBox();
@@ -41,11 +40,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.AnotextBox = new System.Windows.Forms.TextBox();
-            this.rEliminarbutton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rLimpiarbutton = new System.Windows.Forms.Button();
             this.rGuardarbutton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.generoComboBox = new System.Windows.Forms.ComboBox();
+            this.generoListBox = new System.Windows.Forms.ListBox();
+            this.ActoresComboBox = new System.Windows.Forms.ComboBox();
+            this.ActoresListBox = new System.Windows.Forms.ListBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.estudioComboBox = new System.Windows.Forms.ComboBox();
+            this.rEliminarbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CalificaciontextBox
@@ -162,31 +168,10 @@
             this.AnotextBox.Size = new System.Drawing.Size(288, 22);
             this.AnotextBox.TabIndex = 27;
             // 
-            // rEliminarbutton
-            // 
-            this.rEliminarbutton.Image = global::RegistroConsultaPelicula.Properties.Resources.cancel;
-            this.rEliminarbutton.Location = new System.Drawing.Point(265, 113);
-            this.rEliminarbutton.Name = "rEliminarbutton";
-            this.rEliminarbutton.Size = new System.Drawing.Size(75, 74);
-            this.rEliminarbutton.TabIndex = 29;
-            this.rEliminarbutton.Text = "Eliminar";
-            this.rEliminarbutton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.rEliminarbutton.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.Image = global::RegistroConsultaPelicula.Properties.Resources.moviereg;
-            this.pictureBox1.Location = new System.Drawing.Point(52, 194);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(704, 115);
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
-            // 
             // rLimpiarbutton
             // 
             this.rLimpiarbutton.Image = global::RegistroConsultaPelicula.Properties.Resources._1443952939_edit_clear;
-            this.rLimpiarbutton.Location = new System.Drawing.Point(157, 113);
+            this.rLimpiarbutton.Location = new System.Drawing.Point(571, 194);
             this.rLimpiarbutton.Name = "rLimpiarbutton";
             this.rLimpiarbutton.Size = new System.Drawing.Size(75, 74);
             this.rLimpiarbutton.TabIndex = 25;
@@ -199,7 +184,7 @@
             // 
             this.rGuardarbutton.Image = global::RegistroConsultaPelicula.Properties.Resources._1443952702_document_save_as;
             this.rGuardarbutton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.rGuardarbutton.Location = new System.Drawing.Point(52, 113);
+            this.rGuardarbutton.Location = new System.Drawing.Point(453, 194);
             this.rGuardarbutton.Name = "rGuardarbutton";
             this.rGuardarbutton.Size = new System.Drawing.Size(75, 74);
             this.rGuardarbutton.TabIndex = 24;
@@ -208,14 +193,117 @@
             this.rGuardarbutton.UseVisualStyleBackColor = true;
             this.rGuardarbutton.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 122);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 16);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Genero";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(12, 152);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 16);
+            this.label8.TabIndex = 31;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 241);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(54, 16);
+            this.label9.TabIndex = 32;
+            this.label9.Text = "Actores";
+            // 
+            // generoComboBox
+            // 
+            this.generoComboBox.FormattingEnabled = true;
+            this.generoComboBox.Items.AddRange(new object[] {
+            "Accion",
+            "Terror",
+            "Comedia",
+            "Fantacia"});
+            this.generoComboBox.Location = new System.Drawing.Point(70, 114);
+            this.generoComboBox.Name = "generoComboBox";
+            this.generoComboBox.Size = new System.Drawing.Size(158, 24);
+            this.generoComboBox.TabIndex = 33;
+            // 
+            // generoListBox
+            // 
+            this.generoListBox.FormattingEnabled = true;
+            this.generoListBox.ItemHeight = 16;
+            this.generoListBox.Location = new System.Drawing.Point(70, 144);
+            this.generoListBox.Name = "generoListBox";
+            this.generoListBox.Size = new System.Drawing.Size(270, 84);
+            this.generoListBox.TabIndex = 34;
+            this.generoListBox.SelectedIndexChanged += new System.EventHandler(this.generoListBox_SelectedIndexChanged);
+            // 
+            // ActoresComboBox
+            // 
+            this.ActoresComboBox.FormattingEnabled = true;
+            this.ActoresComboBox.Location = new System.Drawing.Point(72, 238);
+            this.ActoresComboBox.Name = "ActoresComboBox";
+            this.ActoresComboBox.Size = new System.Drawing.Size(156, 24);
+            this.ActoresComboBox.TabIndex = 35;
+            // 
+            // ActoresListBox
+            // 
+            this.ActoresListBox.FormattingEnabled = true;
+            this.ActoresListBox.ItemHeight = 16;
+            this.ActoresListBox.Location = new System.Drawing.Point(72, 268);
+            this.ActoresListBox.Name = "ActoresListBox";
+            this.ActoresListBox.Size = new System.Drawing.Size(268, 84);
+            this.ActoresListBox.TabIndex = 36;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(12, 380);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(60, 16);
+            this.label10.TabIndex = 37;
+            this.label10.Text = "Estudios";
+            // 
+            // estudioComboBox
+            // 
+            this.estudioComboBox.FormattingEnabled = true;
+            this.estudioComboBox.Location = new System.Drawing.Point(72, 377);
+            this.estudioComboBox.Name = "estudioComboBox";
+            this.estudioComboBox.Size = new System.Drawing.Size(156, 24);
+            this.estudioComboBox.TabIndex = 38;
+            // 
+            // rEliminarbutton
+            // 
+            this.rEliminarbutton.Image = global::RegistroConsultaPelicula.Properties.Resources.cancel;
+            this.rEliminarbutton.Location = new System.Drawing.Point(681, 194);
+            this.rEliminarbutton.Name = "rEliminarbutton";
+            this.rEliminarbutton.Size = new System.Drawing.Size(75, 74);
+            this.rEliminarbutton.TabIndex = 29;
+            this.rEliminarbutton.Text = "Eliminar";
+            this.rEliminarbutton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.rEliminarbutton.UseVisualStyleBackColor = true;
+            this.rEliminarbutton.Click += new System.EventHandler(this.rEliminarbutton_Click_1);
+            // 
             // RegistroPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.YellowGreen;
-            this.ClientSize = new System.Drawing.Size(769, 339);
+            this.ClientSize = new System.Drawing.Size(908, 407);
+            this.Controls.Add(this.estudioComboBox);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.ActoresListBox);
+            this.Controls.Add(this.ActoresComboBox);
+            this.Controls.Add(this.generoListBox);
+            this.Controls.Add(this.generoComboBox);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.rEliminarbutton);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.AnotextBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.rLimpiarbutton);
@@ -234,7 +322,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RegistroPelicula";
             this.Text = "RegistroPelicula";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.RegistroPelicula_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,7 +344,15 @@
         private System.Windows.Forms.Button rLimpiarbutton;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox AnotextBox;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox generoComboBox;
+        private System.Windows.Forms.ListBox generoListBox;
+        private System.Windows.Forms.ComboBox ActoresComboBox;
+        private System.Windows.Forms.ListBox ActoresListBox;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox estudioComboBox;
         private System.Windows.Forms.Button rEliminarbutton;
     }
 }

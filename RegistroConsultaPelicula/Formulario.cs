@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 
 namespace RegistroConsultaPelicula
 {
@@ -60,6 +61,15 @@ namespace RegistroConsultaPelicula
         {
             RegistroEstudio registro = new RegistroEstudio();
             registro.Show();
+        }
+
+        private void reportePeliculasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            VisorReportesPelicula visor = new VisorReportesPelicula();
+            PeliculasCrystalReport reporte = new PeliculasCrystalReport();
+            visor.VisorReportePelicula.ReportSource = reporte;
+            visor.ShowDialog();
         }
     }
 }

@@ -20,7 +20,7 @@ namespace RegistroConsultaPelicula
 
         private void generoGuardar_Click(object sender, EventArgs e)
         {
-            Genero gen = new Genero();
+            Generos gen = new Generos();
             if (generoIdtextBox.Text.Length == 0)
             {
 
@@ -60,7 +60,7 @@ namespace RegistroConsultaPelicula
         {
             if (generoIdtextBox.TextLength > 0)
             {
-                Genero gen = new Genero();
+                Generos gen = new Generos();
                 gen.GeneroId = Convert.ToInt32(generoIdtextBox.Text);
                 gen.Eliminar();
                 MessageBox.Show("genero ha sido eliminado");

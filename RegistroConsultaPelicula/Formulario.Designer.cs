@@ -36,6 +36,8 @@
             this.registroDeEstudiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.peliculasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.crystalReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportePeliculasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,7 +46,8 @@
             this.menuStrip1.BackColor = System.Drawing.Color.GreenYellow;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivosToolStripMenuItem,
-            this.consultasToolStripMenuItem});
+            this.consultasToolStripMenuItem,
+            this.crystalReportsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(284, 24);
@@ -101,9 +104,24 @@
             // peliculasToolStripMenuItem
             // 
             this.peliculasToolStripMenuItem.Name = "peliculasToolStripMenuItem";
-            this.peliculasToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.peliculasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.peliculasToolStripMenuItem.Text = "Peliculas";
             this.peliculasToolStripMenuItem.Click += new System.EventHandler(this.peliculasToolStripMenuItem_Click_1);
+            // 
+            // crystalReportsToolStripMenuItem
+            // 
+            this.crystalReportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reportePeliculasToolStripMenuItem});
+            this.crystalReportsToolStripMenuItem.Name = "crystalReportsToolStripMenuItem";
+            this.crystalReportsToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.crystalReportsToolStripMenuItem.Text = "CrystalReports";
+            // 
+            // reportePeliculasToolStripMenuItem
+            // 
+            this.reportePeliculasToolStripMenuItem.Name = "reportePeliculasToolStripMenuItem";
+            this.reportePeliculasToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.reportePeliculasToolStripMenuItem.Text = "Reporte Peliculas";
+            this.reportePeliculasToolStripMenuItem.Click += new System.EventHandler(this.reportePeliculasToolStripMenuItem_Click);
             // 
             // Formulario
             // 
@@ -132,6 +150,8 @@
         private System.Windows.Forms.ToolStripMenuItem peliculasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroDeActoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroDeEstudiosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem crystalReportsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportePeliculasToolStripMenuItem;
     }
 }
 

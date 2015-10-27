@@ -68,7 +68,8 @@ namespace BLL
 
         public override DataTable Listado(string Campos, string Condicion, string Orden)
         {
-            throw new NotImplementedException();
+            Conectar conexion = new Conectar();
+            return conexion.ObtenerDatos(string.Format(" select " + Campos + " from Actores where " + Condicion + Orden));
         }
     }
 }

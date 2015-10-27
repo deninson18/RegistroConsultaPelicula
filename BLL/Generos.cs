@@ -6,43 +6,42 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL;
 
+
 namespace BLL
 {
-    public class Estudio : ClaseMaestra
+    public class Generos : ClaseMaestra
     {
-        public int estudioId{ get; set; }
-        public string nombreEstudio { get; set; }
+        public int GeneroId { get; set; }
+        public string DescripcionGen { get; set; }
 
-        public Estudio()
+        public Generos()
         {
-            this.estudioId = 0;
-            this.nombreEstudio = "";
+            this.GeneroId = 0;
+            this.DescripcionGen = "";
         }
-        
-        
-        
+
         public override bool Buscar(int IdBuscado)
         {
             Conectar conector = new Conectar();
             try
             {
                 DataTable dt;
-                dt = conector.ObtenerDatos(String.Format("select * from Estudios whele estudioId={0}", estudioId));
-                this.nombreEstudio = dt.Rows[0]["Nombre"].ToString();
+                dt = conector.ObtenerDatos(String.Format("select * from Generos whele GeneroId={0}", GeneroId));
+                this.DescripcionGen = dt.Rows[0]["Descripcion"].ToString();
                 return true;
 
-            }
-            catch (Exception)
+            }catch(Exception)
             {
                 return false;
             }
+
         }
 
         public override bool Editar()
         {
             bool retorno = false;
             Conectar conector = new Conectar();
-            conector.Ejecutar(string.Format("update Estudios set nombreEstudio='{0}' where estudioId={1}", this.nombreEstudio, this.estudioId));
+            conector.Ejecutar(string.Format("update Generos set Descripcion='{0}' where GeneroId={1}", this.DescripcionGen, this.GeneroId));
             return retorno;
         }
 
@@ -50,7 +49,7 @@ namespace BLL
         {
             bool retorno = false;
             Conectar conector = new Conectar();
-            conector.Ejecutar(string.Format("delete from Estudios where estudioId='{0}'", this.estudioId));
+            conector.Ejecutar(string.Format("delete from Generos where GeneroId='{0}'", this.GeneroId));
             return retorno;
         }
 
@@ -58,15 +57,15 @@ namespace BLL
         {
             bool retorno = false;
             Conectar conector = new Conectar();
-            conector.Ejecutar(string.Format("insert Into Estudios(nombreEstudio) values('{0}')", this.nombreEstudio));
+            conector.Ejecutar(string.Format("insert Into Generos(Descripcion) values('{0}')",this.DescripcionGen));
             return retorno;
         }
-    
 
         public override DataTable Listado(string Campos, string Condicion, string Orden)
         {
-            throw new NotImplementedException();
+            Conectar conexion = new Conectar();
+            return conexion.ObtenerDatos(string.Format(" select " + Campos + " from Generos where " + Condicion + Orden));
+
         }
     }
 }
-

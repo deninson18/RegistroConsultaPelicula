@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
 namespace BLL
 {
-    public class Peliculas
+    public class Peliculas: ClaseMaestra
     {
         public int PeliculaId { get; set; }
         public string Titulo { get; set; }
@@ -38,7 +39,7 @@ namespace BLL
             this.CategoriaId = fCategoriaID;
 
         }
-        public bool Insertar()
+        public override bool Insertar()
         {
             bool retorno = false;
 
@@ -49,8 +50,33 @@ namespace BLL
             return retorno;
 
         }
-        
-        
 
+        public override bool Editar()
+        {
+            bool retorno = false;
+            Conectar conector = new Conectar();
+            //conector.Ejecutar(string.Format("update Pelicula set Titulo='{0}',Imdb='{1}',Ano='{2}',CategoriaId='{3}',Calificacion='{4}',Descripcion='{5}' where PeliculaId={6}",this.Titulo,this.Imbd,this.Ano,this.CategoriaId,this.Calificacion,this.Descripcion));
+            return retorno;
+        }
+
+        public override bool Eliminar()
+        {
+            bool retorno = false;
+            Conectar conector = new Conectar();
+            conector.Ejecutar(string.Format("delete from Pelicula where PeliculaId='{0}'", this.PeliculaId));
+            return retorno;
+        }
+
+        public override bool Buscar(int IdBuscado)
+        {
+            throw new NotImplementedException();
+        }
+
+        public override DataTable Listado(string Campos, string Condicion, string Orden)
+        {
+            Conectar conexion = new Conectar();
+            return conexion.ObtenerDatos(string.Format(" select " + Campos + " from Pelicula where " + Condicion + Orden));
+
+        }
     }
 }
